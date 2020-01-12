@@ -248,7 +248,7 @@ static char *copyurlcmd[] = { "/bin/sh", "-c",
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
-static char *search[] = { "/bin/sh", "-c", "xclip -o selection primary | tr -d '\n' | sed -e 's/^[ \t]*//' -e 's/ /+/g' -e 's#^#https://www.google.com/search?q=#' | xargs -r xdg-open", "externalpipe", NULL };
+static char *search[] = { "/bin/sh", "-c", "xclip -o selection primary | tr -d '\n' | sed -e 's/^[ \t]*//' -e 's/[^ [:alnum:]]//g' -e 's/ /+/g' -e 's#^#https://www.google.com/search?q=#' | xargs -r xdg-open", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
