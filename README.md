@@ -7,6 +7,11 @@
 - Copy st binary in /usr/bin
 - Change default with update-alternatives
 
+## Added functionalities
+
+- Changed colors
+- **search for selection** with `alt+s`. Search engine can be changed in config.h.
+
 # Luke's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
