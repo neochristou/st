@@ -1,3 +1,12 @@
+# Neo's notes
+
+## Set as default (best way I found in ubuntu - there is probably a better way to do it)
+
+- Install stterm (apt install stterm)
+- make install this 
+- Copy st binary in /usr/bin
+- Change default with update-alternatives
+
 # Luke's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
