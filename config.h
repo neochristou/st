@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "FiraCode:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = { "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -81,37 +81,11 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.95;
-
-/* /1* Terminal colors (16 first used in escape sequence) *1/ */
-/* static const char *colorname[] = { */
-/* 	"#282828", /1* hard contrast: #1d2021 / soft contrast: #32302f *1/ */
-/* 	"#cc241d", */
-/* 	"#98971a", */
-/* 	"#d79921", */
-/* 	"#458588", */
-/* 	"#b16286", */
-/* 	"#689d6a", */
-/* 	"#a89984", */
-/* 	"#928374", */
-/* 	"#fb4934", */
-/* 	"#b8bb26", */
-/* 	"#fabd2f", */
-/* 	"#83a598", */
-/* 	"#d3869b", */
-/* 	"#8ec07c", */
-/* 	"#ebdbb2", */
-/* 	[255] = 0, */
-/* 	/1* more colors can be added after 255 to use with DefaultXX *1/ */
-/* 	"#282828",   /1* 256 -> bg *1/ */
-/* 	"#ebdbb2",   /1* 257 -> fg *1/ */
-/* 	"#add8e6", /1* 258 -> cursor *1/ */
-/* }; */
-
-/* Terminal colors (16 first used in escape sequence) */
+ 
 static const char *colorname[] = {
 	"#232323",
 	"#ff000f",
@@ -136,15 +110,9 @@ static const char *colorname[] = {
 	"#add8e6", /* 258 -> cursor */
 };
 
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 258;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 13;
 static unsigned int defaultrcs = 0;
 
 /*
