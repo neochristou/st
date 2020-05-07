@@ -1,0 +1,5 @@
+#!/bin/sh
+tmpfileedit=$(mktemp /tmp/st-edit.XXXXXX)
+trap  'rm "$tmpfileedit"' 0 1 15
+cat > "$tmpfileedit"
+st -e vim "$tmpfileedit"
